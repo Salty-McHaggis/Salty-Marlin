@@ -415,7 +415,7 @@
  *   998 : Dummy Table that ALWAYS reads 25°C or the temperature defined below.
  *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
  */
-#define TEMP_SENSOR_0 1
+#define TEMP_SENSOR_0 5                 //Hemera Update
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
@@ -741,7 +741,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 103.33 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 409 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -986,7 +986,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -44, -1.54, -2.70 }
+#define NOZZLE_TO_PROBE_OFFSET { 58, -13, -2.70 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1122,8 +1122,8 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 350
-#define Y_BED_SIZE 350
+#define X_BED_SIZE 335  // loosing approx 15mm
+#define Y_BED_SIZE 310  // loosing approx 40mm
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
@@ -1503,8 +1503,8 @@
 
 // Preheat Constants
 #define PREHEAT_1_LABEL       "PLA"
-#define PREHEAT_1_TEMP_HOTEND 200
-#define PREHEAT_1_TEMP_BED     70
+#define PREHEAT_1_TEMP_HOTEND 215
+#define PREHEAT_1_TEMP_BED     60
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
 #define PREHEAT_2_LABEL       "ABS"
