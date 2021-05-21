@@ -429,7 +429,7 @@
 
 // Dummy thermistor constant temperature readings, for use with 998 and 999
 #define DUMMY_THERMISTOR_998_VALUE 25
-#define DUMMY_THERMISTOR_999_VALUE 100
+#define DUMMY_THERMISTOR_999_VALUE 185
 
 // Resistor values when using a MAX31865 (sensor -5)
 // Sensor value is typically 100 (PT100) or 1000 (PT1000)
@@ -741,7 +741,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 409 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 387.09 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -986,7 +986,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 58, -13, -2.70 }
+#define NOZZLE_TO_PROBE_OFFSET { 58, -12, -3 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.

@@ -28,7 +28,7 @@
 /**
  * Marlin release version identifier
  */
-#define SHORT_BUILD_VERSION "Hemera 0.01 No Runout 2.0.7.2"
+#define SHORT_BUILD_VERSION "Hemera 1.1 NR Marlin 2.0.7.2"
 
 /**
  * Verbose version identifier which should contain a reference to the location
